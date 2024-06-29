@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Images/favicon.ico">
+    <title>DevDetective</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="container">
+            <header class="header">
+                <h1 class="title">DevDetective</h1>
+                <div class="btn" id="modeBtn">
+                    <p id="modeText">Dark</p>
+                    <div class="iconContainer">
+                        <img src="./Images/moon-icon.svg" 
+                        alt=""
+                        id="modeIcon"
+                        loading="lazy">
+                    </div>
+                </div>
+            </header>
+
+            <main>
+                <!-- search container -->
+                <div class="searchContainer">
+                    <input type="text" id="input" placeholder="Enter a Github username..." required autofocus />
+
+                    <div class="error">
+                        <p id="noResults">
+                            no search result
+                        </p>
+                    </div>
+
+                    <button id="btn">Search</button>
+                </div>
+
+                <!-- profile container -->
+                <div class="profileContainer">
+                    <div class="profileContent">
+                        <div class="profileHeader">
+                            <img id="userImage" loading="lazy"/>
+                            <div class="profileInfoWrapper">
+                                <div class="profileName">
+                                    <h2 id="name"></h2>
+                                    <a
+                                        href=""
+                                        
+                                        id="username"
+                                    ></a>
+
+                                </div>
+                                <p id="date"></p>
+                            </div>
+                        </div>
+
+                        <p id="profileBio"></p>
+
+                        <div class="statsContainer">
+                            <div class="profileStats">
+                                <p class="statsTitle">Reops</p>
+                                <a id="repos"></a>
+                            </div>
+
+                            <div class="profileStats">
+                                <p class="statsTitle">Followers</p>
+                                <a id="followers"></a>
+                            </div>
+
+                            <div class="profileStats">
+                                <p class="statsTitle">Following</p>
+                                <a id="following"></a>
+                            </div>
+                        </div>
+
+                        <div class="profileFooter">
+                            <div class="profileInfo">
+                                <div class="bottomIcon">
+                                    <img src="./Images/location-icon.svg" alt="" loading="lazy">
+                                </div>
+                                <p id="location"></p>
+                            </div>
+
+                            <div class="profileInfo">
+                                <div class="bottomIcon">
+                                  <img src="./Images/website-icon.svg"alt=""loading="lazy"/>
+                                </div>
+                                <a id="website"></a>
+                            </div>
+
+                            <div class="profileInfo">
+                                <div class="bottomIcon">
+                                  <img src="./Images/twitter-icon.svg"alt="" loading="lazy"/>
+                                </div>
+                                <a id="twitter"></a>
+                            </div>
+
+                            <div class="profileInfo">
+                                <div class="bottomIcon">
+                                  <img src="./Images/company-icon.svg" alt=""loading="lazy"/>
+                                </div>
+                                <p id="company"></p>
+                              </div>
+                        </div>
+                    </div>
+                </div>  
+            </main>
+        </div>
+
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
