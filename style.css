@@ -87,6 +87,22 @@ main {
     border-radius: 15px;
     box-shadow: var(--lm-shadow);
 }
+
+#noResults{
+  position: absolute;
+  text-transform: capitalize;;
+  top: -30px;
+  right: -40px;
+  background-color: red;
+  border-radius: 10px;
+  width: 180px;
+  padding: 4px 6px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  scale: 0;
+  transition: 0.5s;
+}
   
 #input {
     border: none;
